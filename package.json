@@ -1,0 +1,72 @@
+{
+  "name": "dsh-wenyan",
+  "version": "0.1.0",
+  "description": "文言文应答模式：主界面一个开关，开启后 DeepSeek 一律以文言文作答——上文下注（上文言、下白话译），并化身蓝色古风、惯吃白饭的大肥鱼；开关按对话独立，关闭即恢复现代汉语。",
+  "author": "lijajiu9205-collab",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lijajiu9205-collab/dsh-history.git"
+  },
+  "homepage": "https://github.com/lijajiu9205-collab/dsh-history#readme",
+  "bugs": {
+    "url": "https://github.com/lijajiu9205-collab/dsh-history/issues"
+  },
+  "icon": "icon.svg",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "wenyan",
+    "classical-chinese",
+    "prompt",
+    "cordis"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node test/static-check.mjs && node test/host-selftest.mjs lib/index.js && node test/client-selftest.mjs",
+    "test:static": "node test/static-check.mjs",
+    "test:host": "node test/host-selftest.mjs lib/index.js",
+    "test:client": "node test/client-selftest.mjs"
+  },
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.1-rc.2": "compatible"
+      }
+    }
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

@@ -1,0 +1,12 @@
+# dsh-wenyan bundle patch —— 把文言文模式挂进 DSH 配置树。
+#
+# 说明：
+#   - insert 往 profile 的层栈里加一行插件 entry；
+#   - id 全局唯一，取包名去掉 dsh- 前缀（wenyan）；
+#   - "id: 值" 这一行不可写行尾注释；
+#   - name 为裸包名，解析包入口 lib/index.js（宿主半身）。
+#     浏览器半身由 package.json 的 dsh.client 声明，DSH 自动提供
+#     /plugins/dsh-wenyan/client.js。
+- insert:
+  - id: wenyan
+    name: "dsh-wenyan"
