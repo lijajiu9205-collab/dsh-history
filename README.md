@@ -27,6 +27,12 @@ Web / headless 版：
 dsh plugin --profile web add github:lijajiu9205-collab/dsh-history
 ```
 
+或用 [Release](https://github.com/lijajiu9205-collab/dsh-history/releases) 里的预构建包（`.tgz`，免构建授权，也可直接下载）：
+
+```sh
+dsh plugin --profile web add "https://github.com/lijajiu9205-collab/dsh-history/releases/download/v0.1.0/dsh-wenyan-0.1.0.tgz"
+```
+
 桌面版（desktop profile 由 Electron 应用专管，`dsh plugin --profile desktop add` 会被拒绝）：
 
 - 推荐：装 [dshmarket](https://github.com/dsh-market/dsh-market) 插件市场，在「发现」里搜索本插件一键安装；
