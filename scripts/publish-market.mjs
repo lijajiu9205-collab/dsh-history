@@ -78,7 +78,7 @@ async function call(method, path, body) {
 const entryYaml = `url: https://github.com/${OWNER}/${REPO}
 name: ${OWNER}/${REPO}
 category: fun
-tarball: https://github.com/${OWNER}/${REPO}/releases/download/v0.1.0/dsh-wenyan-0.1.0.tgz
+tarball: https://github.com/${OWNER}/${REPO}/releases/download/v0.1.1/dsh-wenyan-0.1.1.tgz
 description:
   en: 'Per-conversation toggle that makes the model answer in classical Chinese (文言 above a —— line, a modern-Chinese translation below) and speak as a blue classical-style fish that eats plain rice; each conversation keeps its own switch, and turning it off restores plain modern Chinese.'
   zh: '按对话独立的文言文开关：开启后模型改用文言行文（上段文言、中间「——」、下段白话译注），并化身蓝色古风、惯吃白饭的大肥鱼；每个对话各自记住开关，关闭即恢复现代汉语并隐去人格。'
