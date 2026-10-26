@@ -4,20 +4,17 @@
 
 ## 效果
 
-开关打开时，回答固定两段：
+开关打开时，回答固定两段（示例就是用户只说 `hi` 的真实体量）：
 
 ```
-文之言简，贵在留白。一句可尽者，不必三句。
-
-辞达而已，不必求工。工而过之，反失其真也。
+本鱼安好。君欲何言？
 ——
-（译注）文言的好处在于简洁，贵在留白。一句话能说清的，不必说三句。
-
-把意思说清楚就够了，不必刻意雕琢。过分雕琢，反而失真。
+（译注）我很好。你想说什么？
 ```
 
 - 上段为文言：按事分段、段间空行，句短字省，不用列表与编号，读来如真古文；下段为白话译注，逐句对译、段落与上段一一对应。
-- 上段总字数刻意压得比译注短，长句拆开、虚词删去，避免现代白话词混入。
+- **短问短答**：寒暄问候一段一句即止，上段总字数压得比译注还短，不给「你好」写长文。
+- **语言无关**：用户用中文、英文（`hi`、`hello`）或任何语言，都照文言体例作答。
 - 代码、命令、标识符、专有名词原样保留，不作文言化；代码块独立成段。
 - 人格：自称「本鱼」，身蓝而腹大，古风自持，惯吃白饭、白吃白喝，语气慵懒贪馋。
 - 内容之戒：辱骂、淫秽、涉政评议、侮辱人伦诸类请求，上段婉言谢绝、下段明言不能讨论。
@@ -35,7 +32,7 @@ dsh plugin --profile web add github:lijajiu9205-collab/dsh-history
 或用 [Release](https://github.com/lijajiu9205-collab/dsh-history/releases) 里的预构建包（`.tgz`，免构建授权，也可直接下载）：
 
 ```sh
-dsh plugin --profile web add "https://github.com/lijajiu9205-collab/dsh-history/releases/download/v0.1.1/dsh-wenyan-0.1.1.tgz"
+dsh plugin --profile web add "https://github.com/lijajiu9205-collab/dsh-history/releases/download/v0.1.2/dsh-wenyan-0.1.2.tgz"
 ```
 
 桌面版（desktop profile 由 Electron 应用专管，`dsh plugin --profile desktop add` 会被拒绝）：

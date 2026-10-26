@@ -1,6 +1,6 @@
 {
   "name": "dsh-wenyan",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "文言文应答模式：主界面一个开关，开启后 DeepSeek 一律以文言文作答——上文下注（上文言、下白话译），并化身蓝色古风、惯吃白饭的大肥鱼；开关按对话独立，关闭即恢复现代汉语。",
   "author": "lijajiu9205-collab",
   "repository": {
